@@ -33,16 +33,11 @@
     </div>
     <span class="my-auto">Contactez-nous <a href="tel:0143701120" class="text-blue-300 rounded hover:bg-gray-700 focus:bg-gray-700 p-1">01 43 70 11 20</a> 7j/7</span>
     <div class="absolute inset-y-0 right-0 flex md:items-center md:hidden">
-      <!-- Mobile menu button-->
       <button id="burger" class="inline-flex items-center justify-center p-6 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
-        <!-- Icon when menu is closed. -->
-        <!--Heroicon name: menu Menu open: "hidden", Menu closed: "block" -->
         <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
-        <!-- Icon when menu is open. -->
-        <!--Heroicon name: x Menu open: "block", Menu closed: "hidden" -->
         <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
