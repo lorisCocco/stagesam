@@ -26,11 +26,11 @@ class AboutController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request,[
-            'presentation'  =>  'required',
+            'body'  =>  'required',
         ]);
 
         $about = About::find($id);
-        $about->presentation = $request->presentation;
+        $about->body = $request->body;
         $about->save();
         return redirect()->route('about');
     }

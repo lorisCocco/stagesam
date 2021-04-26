@@ -18,18 +18,14 @@ class PostController extends Controller
 
     public function single($id)
     {
-        try
-        {
+        try {
             $post = Post::findOrFail($id);
             $files = File::where('category', $post->title)->get();
             $links = Post::get();
             return view('posts.single', ["post" => $post, 'links' => $links, 'files' => $files]);
-        }
-        catch(ModelNotFoundException $err)
-        {
+        } catch (ModelNotFoundException $err) {
             return redirect()->route('home');
         }
-        
     }
 
     public function prestations()
